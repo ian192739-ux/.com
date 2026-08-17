@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacion Roleplay - Liberty County</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+        
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #2a2a2a 100%);
+        }
+        
+        .card-gradient {
+            background: linear-gradient(145deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+        }
+        
+        .glow {
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.4);
+        }
+        
+        .glow-discord {
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+        }
+        
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .animate-pulse-slow {
+            animation: pulse 3s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        
+        .text-gradient {
+            background: linear-gradient(90deg, #ffd700, #ffb700, #ff9500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hover-scale {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+        
+        .nav-blur {
+            backdrop-filter: blur(10px);
+            background: rgba(10, 10, 10, 0.9);
+        }
+    </style>
+</head>
+<body class="gradient-bg min-h-screen text-white">
+    <!-- Navigation -->
+    <nav class="nav-blur fixed w-full z-50 py-4 px-6">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <img src="logo.png.png" alt="Nacion Roleplay Logo" class="w-10 h-10 rounded-full object-contain">
+                <span class="text-xl font-bold">Nacion Roleplay</span>
+            </div>
+            <div class="hidden md:flex gap-8">
+                <a href="#inicio" class="hover:text-yellow-400 transition">Inicio</a>
+                <a href="#redes" class="hover:text-yellow-400 transition">Redes Sociales</a>
+                <a href="#guias" class="hover:text-yellow-400 transition">Guías RP</a>
+                <a href="#reglas" class="hover:text-yellow-400 transition">Reglas</a>
+            </div>
+            <button class="md:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="min-h-screen flex items-center justify-center px-6 pt-20">
+        <div class="text-center max-w-4xl">
+            <div class="animate-float mb-8">
+                <img src="logo.png.png" alt="Nacion Roleplay Logo" class="w-32 h-32 mx-auto rounded-full object-contain glow">
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-4">
+                <span class="text-gradient">Nacion Roleplay</span>
+            </h1>
+            <h2 class="text-2xl md:text-3xl text-gray-300 mb-6">Liberty County</h2>
+            <p class="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
+                Bienvenido al servidor privado de roleplay más inmersivo de Roblox. 
+                Experimenta una simulación realista en Liberty County con una comunidad activa.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://discord.gg/2cBcbmsDX" target="_blank" class="bg-yellow-600 hover:bg-yellow-700 px-8 py-4 rounded-full font-semibold transition hover-scale glow text-black">
+                    <i class="fab fa-discord mr-2"></i>Unirse al Discord
+                </a>
+                <a href="#guias" class="border border-yellow-500 hover:bg-yellow-500/20 px-8 py-4 rounded-full font-semibold transition hover-scale">
+                    <i class="fas fa-book mr-2"></i>Guías RP
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h3 class="text-3xl md:text-4xl font-bold text-center mb-12">
+                ¿Por qué elegir <span class="text-gradient">Nacion Roleplay</span>?
+            </h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card-gradient p-8 rounded-2xl border border-white/10 hover-scale">
+                    <i class="fas fa-users text-4xl text-yellow-400 mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-3">Comunidad Activa</h4>
+                    <p class="text-gray-400">Más de 100 jugadores activos dispuestos a rolear contigo las 24 horas del día.</p>
+                </div>
+                <div class="card-gradient p-8 rounded-2xl border border-white/10 hover-scale">
+                    <i class="fas fa-balance-scale text-4xl text-amber-400 mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-3">Reglas Claras</h4>
+                    <p class="text-gray-400">Sistema de reglas justo y moderadores dedicados para garantizar el mejor RP.</p>
+                </div>
+                <div class="card-gradient p-8 rounded-2xl border border-white/10 hover-scale">
+                    <i class="fas fa-car text-4xl text-orange-400 mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-3">Vehículos Exclusivos</h4>
+                    <p class="text-gray-400">Acceso a vehículos únicos y personalizados no disponibles en otros servidores.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section id="redes" class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h3 class="text-3xl md:text-4xl font-bold text-center mb-12">
+                Únete a nuestras <span class="text-gradient">Redes Sociales</span>
+            </h3>
+            <div class="max-w-2xl mx-auto">
+                <!-- Discord -->
+                <a href="https://discord.gg/2cBcbmsDX" target="_blank" class="card-gradient p-8 rounded-2xl border border-white/10 hover-scale glow-discord group block">
+                    <div class="flex items-center gap-4">
+                        <svg class="w-16 h-16 text-yellow-400 group-hover:scale-110 transition flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                        </svg>
+                        <div>
+                            <h4 class="text-2xl font-semibold mb-2">Discord Oficial</h4>
+                            <p class="text-gray-400">Únete a nuestra comunidad para eventos, anuncios y rolear con otros jugadores.</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 text-yellow-400 font-semibold flex items-center">
+                        <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z"/>
+                        </svg>
+                        Entrar al Servidor
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- RP Guides Section -->
+    <section id="guias" class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h3 class="text-3xl md:text-4xl font-bold text-center mb-12">
+                Guías para mejorar tu <span class="text-gradient">Roleplay</span>
+            </h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card-gradient p-6 rounded-xl border border-white/10 hover-scale">
+                    <div class="text-3xl mb-4">🎭</div>
+                    <h4 class="text-xl font-semibold mb-3">Mantén el Personaje</h4>
+                    <p class="text-gray-400 text-sm">No salgas de personaje (OOC). Mantén una historia coherente y reacciona según tu rol.</p>
+                </div>
+                
+                <div class="card-gradient p-6 rounded-xl border border-white/10 hover-scale">
+                    <div class="text-3xl mb-4">📢</div>
+                    <h4 class="text-xl font-semibold mb-3">Comunicación RP</h4>
+                    <p class="text-gray-400 text-sm">Usa // para hablar fuera de personaje. Usa /me para acciones y /do para descripciones.</p>
+                </div>
+                
+                <div class="card-gradient p-6 rounded-xl border border-white/10 hover-scale">
+                    <div class="text-3xl mb-4">⚖️</div>
+                    <h4 class="text-xl font-semibold mb-3">Respeta el Valor de Vida</h4>
+                    <p class="text-gray-400 text-sm">Tu vida es valiosa. No actúes como si fueras invencible. El miedo debe ser real.</p>
+                </div>
+                
+                <div class="card-gradient p-6 rounded-xl border border-white/10 hover-scale">
+                    <div class="text-3xl mb-4">🚗</div>
+                    <h4 class="text-xl font-semibold mb-3">Conducción Realista</h4>
+                    <p class="text-gray-400 text-sm">Conduce como en la vida real. Respeta señales, no hagas cosas imposibles.</p>
+                </div>
+                
+                <div class="card-gradient p-6 rounded-xl border border-white/10 hover-scale">
+                    <div class="text-3xl mb-4">🤝</div>
+                    <h4 class="text-xl font-semibold mb-3">Interacciones Sociales</h4>
+                    <p class="text-gray-400 text-sm">Crea relaciones con otros jugadores. Alianzas, enemistades, romances, negocios.</p>
+                </div>
+                
+                <div class="card-gradient p-6 rounded-xl border border-white/10 hover-scale">
+                    <div class="text-3xl mb-4">💼</div>
+                    <h4 class="text-xl font-semibold mb-3">Desarrolla tu Historia</h4>
+                    <p class="text-gray-400 text-sm">Ten un trasfondo para tu personaje. Metas, miedos, motivaciones que te definan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rules Section -->
+    <section id="reglas" class="py-20 px-6">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-3xl md:text-4xl font-bold text-center mb-12">
+                Reglas <span class="text-gradient">Básicas</span>
+            </h3>
+            <div class="card-gradient p-8 rounded-2xl border border-white/10">
+                <ul class="space-y-4">
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-green-400 mt-1"></i>
+                        <span class="text-gray-300">Prohibido el RDM (Random Deathmatch) - Matar sin razón válida</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-green-400 mt-1"></i>
+                        <span class="text-gray-300">Prohibido el VDM (Vehicle Deathmatch) - Usar vehículos como armas</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-green-400 mt-1"></i>
+                        <span class="text-gray-300">Prohibido el Meta Gaming - Usar información OOC en IC</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-green-400 mt-1"></i>
+                        <span class="text-gray-300">Prohibido el Power Gaming - Hacer cosas imposibles</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-green-400 mt-1"></i>
+                        <span class="text-gray-300">Respeta a todos los jugadores y staff</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-green-400 mt-1"></i>
+                        <span class="text-gray-300">Mínimo 15 años para unirse al servidor</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 border-t border-white/10">
+        <div class="max-w-7xl mx-auto text-center">
+            <div class="flex justify-center gap-6 mb-6">
+                <a href="https://discord.gg/2cBcbmsDX" target="_blank" class="text-2xl text-gray-400 hover:text-yellow-400 transition">
+                    <i class="fab fa-discord"></i>
+                </a>
+            </div>
+            <p class="text-gray-500">© 2024 Nacion Roleplay - Liberty County. Todos los derechos reservados.</p>
+            <p class="text-gray-600 text-sm mt-2">No afiliado oficialmente con Roblox Corporation</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-lg');
+            } else {
+                nav.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+</body>
+</html>
